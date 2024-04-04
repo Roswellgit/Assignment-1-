@@ -8,24 +8,6 @@ namespace cocktaillist
 {
     public class CLib
     {
-        
-        List<Calbum> cocktails = new List<Calbum>();
-
-        public void Addtolist(Calbum cocktail)
-        {
-            cocktails.Add(cocktail);
-        }
-        public void SearchCocktail(string cname)
-        {
-            foreach (var cocktail in cocktails)
-            {
-                if (cocktail.cname.Contains(cname))
-                {
-                    Console.WriteLine("Enjoy your Drink^_^...");
-                    ShowHistory(cocktail);
-                }
-            }
-        }
         public void ShowHistory(Calbum cocktail)
         {
             Console.WriteLine("-----------------------");
